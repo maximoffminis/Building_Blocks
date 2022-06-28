@@ -21,7 +21,7 @@ function setup() {
   var option={
     isStatic:true
   };
-  ground=Bodies.rectangle(100,300,400,20);
+  ground=Bodies.rectangle(100,300,400,20,option);
   World.add(world,ground);
   //box1 = new Box(200,100,50,50);
   
@@ -33,7 +33,7 @@ function mousePressed(){
   boxes.push(
     
     
-    new Box(50,50,mouseX,mouseY)
+    new Box(mouseX,mouseY, 50,50)
     
     
     )
